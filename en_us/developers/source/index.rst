@@ -9,6 +9,7 @@ edX Developer's Guide
     change_log
     browsers.rst
     process/index
+    style_guides/index
     testing/index
     extending_platform/index
     modulestores/index
