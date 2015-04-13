@@ -9,10 +9,10 @@ Setting up the Student View
 Overview
 *******************
 
-This chapter describes how you set up your course to be displayed in the course
-summary page and in a student's **Current Courses** dashboard. The information
-you configure for your course is important for prospective and current students
-to understand.
+This section describes how you set up your course to be displayed in the
+course summary page and in the course listings on student dashboards. The
+information you configure for your course is important for prospective and
+current students to understand.
 
 See:
 
@@ -26,11 +26,13 @@ See:
 * :ref:`Add a Course Image`
 * :ref:`Add a Course Video`
 * :ref:`Set Course Requirements`
+* :ref:`Enable Social Media Icons`
 * :ref:`A Template For Course Overview`
 
 
 .. _Edge: http://edge.edx.org
 .. _edX.org: http://edx.org
+
 
 .. _The Course Summary Page:
 
@@ -41,7 +43,7 @@ The Course Summary Page
 The following image shows an example course summary page.  Students can see the
 course summary page before they enroll in the course, and may decide to enroll
 based on the content of the page. You configure the contents of this page in
-Studio, as described in this chapter:
+Studio, as described in this section.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/about_page.png
  :alt: An image of the course summary page.
@@ -52,13 +54,20 @@ Studio, as described in this chapter:
 The Student Dashboard
 ***********************************
 
-If a student enrolls in your course, the course is then listed on the **Current
-Courses** dashboard, with the course image.  From the dashboard, a student can
-open a course that has started. If the course has not started, the student can
-see the start date, as explained in this chapter.
+If a student enrolls in your course, the course is added to their course
+listings on their dashboard, with the course image. From the dashboard, a
+student can open a course that has started. If the course has not started, the
+student can see the start date, as explained in this section.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/dashboard.png
  :alt: An image of the dashboard
+
+
+You can enable social media icons for your course so that enrolled learners
+can share links to the course on Facebook or Twitter directly from the course
+listing on the their dashboards. For information, see :ref:`Enable Social
+Media Icons`.
+
 
 .. _Set Important Dates for Your Course:
 
@@ -93,13 +102,12 @@ The Course Start Date
  you intend it to. You must change the course start date to the date you want
  students to begin using the course.
 
-Students see the course start date and time on their **Current Courses**
-dashboards and on the course About page (sometimes also called the course
-summary page). Students can see some parts of the course before the course
-start date. For example, students can see your **Course Info** page and course-
-wide discussion topics as soon as they enroll in your course. For more
-information about course-wide discussion topics, see :ref:`Create CourseWide
-Discussion Topics`.
+Students see the course start date and time on their dashboards and on the
+course About page (sometimes also called the course summary page). Students
+can see some parts of the course before the course start date. For example,
+students can see your **Course Info** page and course-wide discussion topics
+as soon as they enroll in your course. For more information about course-wide
+discussion topics, see :ref:`Create CourseWide Discussion Topics`.
 
 EdX recommends that you set the start time of your course to early in the day,
 generally 12:00 UTC or earlier. Learners often expect the course to be
@@ -154,7 +162,7 @@ To set an advertised start date:
   .. image:: ../../../shared/building_and_running_chapters/Images/advertised_start.png
    :alt: Image of the advertised start date policy key with a value of "anytime, self-paced"
 
-4. Click **Save Changes** at the bottom of the page.
+4. Click **Save Changes**.
 
 The start date shown on the dashboard is now the value of the **Course
 Advertised Start Date** policy key:
@@ -188,8 +196,7 @@ the course end date.
  summary page.
 
 After grades and certificates are finalized, students see the course end date
-on their personal **Current Courses** dashboards, as shown in the following
-examples.
+on their dashboards, as shown in the following examples.
 
 * If grades and certificates are not yet finalized, students can see the course
   end date and a message:
@@ -341,6 +348,51 @@ The estimated Effort per Week appears at the bottom of the course summary page.
 #. In the **Hours of Effort per Week** field, enter the number of hours you
    expect students to work on this course each week.
 #. View your course summary page to test how the requirements will appear to students.
+
+
+.. _Enable Social Media Icons:
+
+*****************************
+Enable Social Media Icons
+*****************************
+
+You can enable social media icons for your course so that enrolled learners
+can share links to the course on Facebook and Twitter directly from the course
+listing on their dashboards.
+
+
+To enable social media icons for your course, follow these steps.
+
+#. In Studio, from the **Settings** menu, select **Advanced Settings**.
+
+#. Find the **Social Media Sharing URL** policy key. The default value is
+   **null**, which means that social sharing icons do not appear in your
+   course listing on the student dashboard.
+
+#. Enter the URL that you want social media sites to link to when learners
+   share your course using the social media icons. Make sure you provide
+   absolute path URLs. That is, include the protocol, subdomain, and domain.
+   For example, ``http://www.edx.org/course/Introduction-to-MOOCs-ITM001.``
+
+.. image:: ../../../shared/building_and_running_chapters/Images/SocialMediaSharingAdvancedSetting.png
+   :alt: The Social Media Sharing URL policy key, populated with an example URL.
+
+4. Click **Save Changes**.
+
+Studio reformats the policy key you have entered to surround it with a set of
+double quotation marks.
+
+In your course listing on learners' dashboards, icons for Facebook and Twitter
+are now available. Learners can post about their involvement in the course,
+along with a link back to the course using the URL you specified.
+
+.. image:: ../../../shared/building_and_running_chapters/Images/SocialMediaSharingIconsEnabled.png
+   :alt: A course listing from the Current Courses dashboard with Facebook and Twitter icons visible.
+
+.. note:: To hide social media icons from your course listing on the **Current
+   Courses** dashboard, change the value of the **Social Media Sharing URL**
+   policy key back to **null**.
+
 
 .. _A Template For Course Overview:
 
