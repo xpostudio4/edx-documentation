@@ -120,6 +120,7 @@ enrollment.
 * :ref:`user_api_usercoursetag`
 * :ref:`user_id_map`
 * :ref:`student_languageproficiency`
+* :ref:`verify_student_verificationstatus`
 
 .. _auth_user:
 
@@ -969,6 +970,72 @@ code
 ----
   The language code. Most codes are ISO 639-1 codes, with the addition of
   codes for simplified and traditional Chinese.
+
+.. _verify_student_verificationstatus:
+
+=======================================================
+Columns in the verify_student_verificationstatus Table
+=======================================================
+
+The ``verify_student_verificationstatus`` table shows re-verification attempts and outcomes (success, failure, error).
+
+**History**: Added XX August 2015.
+
+.. code-block:: sql
+
+    timestamp  status course_id checkpoint_name user_id 
+
+    2015-04-28 12:13:22 submitted edX/DemoX/Demo_Course Final 1 
+
+
+The ``verify_student_verificationstatus`` table has the following columns.
+
++-----------------+-------------+------+-----+---------+----------------+
+| Field           | Type        | Null | Key | Default | Extra          |
++-----------------+-------------+------+-----+---------+----------------+
+| id              | int(11)     | NO   | PRI | NULL    | auto_increment |
++-----------------+-------------+------+-----+---------+----------------+
+| user_profile_id | int(11)     | NO   | MUL | NULL    |                |
++-----------------+-------------+------+-----+---------+----------------+
+| code            | varchar(16) | NO   | MUL | NULL    |                |
++-----------------+-------------+------+-----+---------+----------------+
+
+
+---------
+timestamp
+---------
+ 
+  the datetime at which the user's verification status changed, in UTC. status
+is either:
+
+  * "submitted": The user has submitted photos of his or her face for re-
+    verification.
+  * "approved": The user's identity was successfully verified by the
+    verification service (Software Secure)
+  * "denied": The verification service denied that the user's re-verification
+    face photo matched the ID photo he/she submitted at the start of the
+    course.
+  * "error": An error occurred when updating the user's verification status.
+
+---------
+course_id
+---------
+
+  The course key for the course the user is re-verifying for.
+
+----------------
+checkpoint_name
+----------------
+
+  The point in the course at which the user was prompted to re-verify. Right
+  now, this is a field that course authors can define when authoring the
+  course. We're expecting this to have values like "final" or "midterm".
+
+--------
+user_id
+--------
+
+  The id of the user who is re-verifying.
 
 
 .. _Courseware_Progress:
