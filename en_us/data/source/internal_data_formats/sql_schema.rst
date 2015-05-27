@@ -977,7 +977,8 @@ code
 Columns in the verify_student_verificationstatus Table
 =======================================================
 
-The ``verify_student_verificationstatus`` table shows re-verification attempts and outcomes (success, failure, error).
+The ``verify_student_verificationstatus`` table shows re-verification attempts
+and outcomes. The possible outcomes are success, failure, and error.
 
 **History**: Added XX August 2015.
 
@@ -985,7 +986,7 @@ The ``verify_student_verificationstatus`` table shows re-verification attempts a
 
     timestamp  status course_id checkpoint_name user_id 
 
-    2015-04-28 12:13:22 submitted edX/DemoX/Demo_Course Final 1 
+    2015-04-28 12:13:22 submitted edX/DemoX/Demo_Course Final 9999999 
 
 
 The ``verify_student_verificationstatus`` table has the following columns.
@@ -993,49 +994,52 @@ The ``verify_student_verificationstatus`` table has the following columns.
 +-----------------+-------------+------+-----+---------+----------------+
 | Field           | Type        | Null | Key | Default | Extra          |
 +-----------------+-------------+------+-----+---------+----------------+
-| id              | int(11)     | NO   | PRI | NULL    | auto_increment |
+| timestamp       |             |      |     |         |                |
 +-----------------+-------------+------+-----+---------+----------------+
-| user_profile_id | int(11)     | NO   | MUL | NULL    |                |
+| status          |             |      |     |         |                |
 +-----------------+-------------+------+-----+---------+----------------+
-| code            | varchar(16) | NO   | MUL | NULL    |                |
+| course_id       |             |      |     |         |                |
 +-----------------+-------------+------+-----+---------+----------------+
-
+| checkpoint_name |             |      |     |         |                |
++-----------------+-------------+------+-----+---------+----------------+ 
+|user_id          |             |      |     |         |                |
++-----------------+-------------+------+-----+---------+----------------+
 
 ---------
 timestamp
 ---------
  
-  the datetime at which the user's verification status changed, in UTC. status
-is either:
+  The date and time at which the user's verification status changed, in UTC.
+  This column can have one of the following statuses.
 
-  * "submitted": The user has submitted photos of his or her face for re-
-    verification.
-  * "approved": The user's identity was successfully verified by the
-    verification service (Software Secure)
-  * "denied": The verification service denied that the user's re-verification
-    face photo matched the ID photo he/she submitted at the start of the
-    course.
-  * "error": An error occurred when updating the user's verification status.
+  * ``submitted``: The user has submitted photos for re-verification.
+  * ``approved``: The verification service, Software Secure, successfully
+    verified the user's identity.
+  * ``denied``: The verification service, Software Secure, determined that the
+    user's re-verification photo does not match the photo on the ID that the
+    user submitted at the start of the course.
+  * ``error``: An error occurred during the verification process.
 
 ---------
 course_id
 ---------
 
-  The course key for the course the user is re-verifying for.
+  The ID of the course run that the user is re-verifying for.
 
 ----------------
 checkpoint_name
 ----------------
 
-  The point in the course at which the user was prompted to re-verify. Right
-  now, this is a field that course authors can define when authoring the
-  course. We're expecting this to have values like "final" or "midterm".
+  The point in the course at which the user was prompted to re-verify his or
+  her identity. As of August 2015, course authors can define these fields when
+  they create the course. Because these checkpoints typically occur before
+  exams, examples of expected values are ``final`` and ``midterm``.
 
 --------
 user_id
 --------
 
-  The id of the user who is re-verifying.
+  The ID of the user who is re-verifying his or her identity.
 
 
 .. _Courseware_Progress:
