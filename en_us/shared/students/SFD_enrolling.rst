@@ -11,28 +11,27 @@ To enroll in a course, follow these steps.
 #. When the About page for the course opens, select **Enroll Now** in the
    upper right corner of the page.
 
-  * If the course only offers honor code certificates, you are enrolled in
-    the course after you select **Enroll Now**.
+   * If your course only offers honor code certificates, you are enrolled in
+     the course after you select **Enroll Now**.
 
-  * If the course offers both honor code certificates and verified
-    certificates, you must select the type of certificate you want after you
-    select **Enroll Now**.
+   * If your course offers both honor code certificates and verified
+     certificates, you must select the type of certificate you want after you
+     select **Enroll Now**.
 
-    * To work toward an honor code certificate, select **Audit This
-      Course**.
+     * To work toward an honor code certificate, select **Audit This Course**.
 
-    * To work toward a verified certificate, select **Pursue a Verified
-      Certificate**, and then follow the instructions to pay the
-      course fee and verify your identity. You must pay the course fee
-      before you can begin the course. You do not have to verify your
-      identity immediately, but you must verify your identity before the
-      course ID verification deadline has passed. For more information, see
+     * To work toward a verified certificate, select **Pursue a Verified
+       Certificate**, and then follow the onscreen instructions to pay the
+       course fee and verify your identity. You must pay the course fee before
+       you can begin the course. You do not have to verify your identity
+       immediately, but you must verify your identity before the course ID
+       verification deadline has passed. For more information, see
       :ref:`SFD Verify Your Identity`.
 
      For more information about honor code certificates and verified
      certificates, see :ref:`Certificates`.
 
-3. After you enroll in the course, your dashboard opens automatically. When
+#. After you enroll in the course, your dashboard opens automatically. When
    your dashboard opens, verify that the new course appears in your list of
    courses.
 
@@ -53,7 +52,7 @@ Verify Your Identity
 
 When you enroll in the verified certificate track for a course, you do not
 have to verify your identity immediately, but you must verify your identity
-before the course ID verification deadline. The deadline appears below the
+before the course ID verification deadline. You can see the deadline below the
 name of the course on your dashboard.
 
 To verify your identity, you use a webcam to submit a photo of yourself and of
@@ -66,7 +65,8 @@ When you verify your identity for one course, you verify your identity for all
 edX courses. Verification is effective for one year. If you enroll in another
 verified course within that year, you do not have to verify your identity.
 
-.. note:: If you enroll in a course that offers academic credit, you might have 
+
+.. note:: If you enroll in a course that offers academic credit, you might have
  to verify your identity periodically during the course. For more information,
  see :ref:`SFD Academic Course Credit`.
 
@@ -112,6 +112,7 @@ To verify your identity, follow these steps.
    **Photo requirements**, and then select **Confirm** in the lower right
    corner.
 
+<<<<<<< HEAD
    .. important:: If your ID uses non-Roman characters, you must edit your edX 
     account name in this step to use non-Roman characters so that your edX
     account name exactly matches the name on your ID. To do this, select
@@ -132,4 +133,3 @@ on your dashboard that informs you whether the verification process was
 successful. If the verification process was not successful, you must submit
 new verification photos. You can begin the verification process again by
 selecting **Verify Your Identity**.
-

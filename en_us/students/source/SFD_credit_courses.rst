@@ -32,13 +32,11 @@ To receive academic credit for a course, you must enroll in the verified track
 for the course. 
 
 For more information about enrolling, see :ref:`SFD Enrolling in a Course`.
-for the course.
 
 *****************************
 Complete Identity Checks
 *****************************
 
-<<<<<<< HEAD
 When you take a course for academic credit, you have to complete a
 number of identity checks. Identity checks include periodic identity
 reverification inside the course and proctored exams.
@@ -62,66 +60,6 @@ reverification inside the course and proctored exams.
 
   For more information about proctored exams, see :ref:`SFD_ProctoredExams`.
 
-========================================
-In-Course Identity Verification 
-========================================
-
-When your course requires in-course identity verification, you must verify
-your identity at the beginning of the course and then at certain times during
-the course. For example, you might be required to verify your identity before
-you take each exam.
-
-When you must verify your identity, you receive an "Identity verification
-required" message in the courseware. You cannot complete any further work in
-the course until you either verify your identity or specifically decline to
-verify your identity.
-
-To verify your identity, follow these steps.
-
-#. In the message you receive, select **Verify Now** to begin the ID
-   verification process.
-
-#. On the **Take Your Photo** page, select the camera icon below your image to
-   take a picture of your face.
-
-   For information about how to take a good photo, review the **To take a
-   successful photo** guidelines to the right of your image.
-
-#. On the **Review Your Photo** page, review your photo. If you are not
-   satisfied with the photo, select **Retake Photo**. When you are satisfied
-   with your photo, select **Submit** in the lower left corner.
-
-A verification confirmation page opens and confirms that you have submitted
-your ID verification photo.
-
-After edX's authorization service examines your photo, you receive a message
-on your dashboard that informs you whether the verification process was
-successful. If the verification process was not successful, you must submit
-new verification photos. You can begin the verification process again by
-selecting **Verify Your Identity**.
-
-For more information about ID verification, see :ref:`SFD Verify Your
-Identity`.
-
-===================
-Proctored Exams
-===================
-
-Proctored exams are exams that use both time limits and online proctoring
-software. To pass a proctored exam, you must receive both a passing grade for
-the exam itself and a Pass result when the recording of your proctoring
-session is reviewed.
-
-Before you begin a proctored exam, you must specify whether you want to take
-the exam as a proctored exam. If you take the exam as a proctored exam, you
-receive instructions to install the proctoring software, verify your identity,
-and scan the desk and room where you are taking the exam.
-
-If you do not take the exam as a proctored exam, the exam is still timed.
-However, you are no longer eligible for credit for the course.
-
-For more information about proctored exams, see :ref:`SFD_ProctoredExams`.
-
 *****************************
 Keep Track of Your Progress
 *****************************
@@ -139,7 +77,6 @@ individual requirement.
 
 .. update image when sandbox ready (8/7: currently can't show anything but
 .. "Upcoming" status)
-
 
 *****************************
 Purchase Academic Credit
@@ -162,10 +99,6 @@ To purchase academic credit, follow these steps.
 
 #. On your dashboard, select **Purchase Credit** next to the course that you
    want.
-
-#. On the **Checkout** page, verify that the organization that you want to
-   purchase credit from appears, and then select **Checkout** or **Checkout
-
 #. On the **Checkout** page, make sure that you see the organization that you
    want to purchase credit from, and then select **Checkout** or **Checkout
    with PayPal**.
@@ -173,18 +106,7 @@ To purchase academic credit, follow these steps.
 .. Yes, I know the last two instances of "Checkout" should be "Check Out".
 .. Long story.
 
-#. Follow the instructions to complete the payment process. When the payment
-   process is complete, a confirmation page opens, and you receive an email
-   message.
-#. On the payment confirmation page, a notification informs you if the
-   organization requires you to complete additional steps to receive credit.
-   If the organization has additional requirements, select **Complete Credit**
-   to go to that organization's website.
-
-After the organization has evaluated your information, a message on your
-dashboard indicates whether the organization has granted you academic credit
-
-#. Follow the onscreen instructions to complete the payment process. When the
+3. Follow the onscreen instructions to complete the payment process. When the
    payment process is complete, a confirmation page opens, and you receive an
    email message.
 #. On the payment confirmation page, note whether the organization requires
@@ -199,3 +121,4 @@ email that indicates whether you have received academic credit for the course.
 
 If you do not receive credit for the course, contact the organization that
 issues the credit directly.
+

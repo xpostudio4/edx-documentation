@@ -114,6 +114,19 @@ August 2015
        :ref:`Getting Started with edX` section.
 
 ****************
+August 2015
+****************
+
+.. list-table::
+   :widths: 15 70
+   :header-rows: 1
+
+   * - Date
+     - Change
+   * - 1 Aug 2015
+     - Added the :ref:`Offering Academic Course Credit` topic.
+
+****************
 July 2015
 ****************
 

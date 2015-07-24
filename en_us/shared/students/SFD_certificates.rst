@@ -66,13 +66,6 @@ In addition, transcripts are not available for edX course work.
 Certificate Types
 ****************************
 
-.. only:: Open_edX
-
-  Different types of certificates might be available for courses you take: for
-  example, "honor code" or "verified". You select the certificate type you want
-  when you enroll in a course. You select the certificate type when you
-  :ref:`enroll in a course <SFD Enrolling in a Course>`.
-
 .. only:: Partners
 
     EdX offers three types of certificates. You select the certificate type
@@ -82,9 +75,14 @@ Certificate Types
      :local:
      :depth: 1
 
-    .. Note:: Not all courses offer every type of certificate.
+    .. note:: A very small number of courses do not offer certificates. These
+     courses have the same rigorous material as other edX courses. If you want
+     evidence that you completed the course, you can print a copy of the
+     **Progress** page in the course.
 
     .. _SFD Honor Code Certificates:
+
+.. _SFD Honor Code Certificates:
 
     =========================
     Honor Code Certificates
@@ -115,6 +113,7 @@ Certificate Types
     .. image:: ../../shared/students/Images/SFD_VerCert.png
        :width: 500
        :alt: Example edX verified certificate
+
 
     If a course offers verified certificates, you see a "Verified" badge on the
     course image in the list of courses on edx.org.
@@ -302,7 +301,6 @@ Select **Add to profile** beneath the course in your dashboard.
 
 Your profile page in LinkedIn opens, with a prompt to confirm the addition of
 your certificate.
-
 
 ***********************************
 Certificates for Self-Paced Courses

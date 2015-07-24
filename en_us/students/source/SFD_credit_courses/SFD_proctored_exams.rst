@@ -797,4 +797,3 @@ For more information about academic course credit, see :ref:`SFD Academic
 Course Credit`.
 
 .. include:: ../../../links/links.rst
-

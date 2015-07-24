@@ -152,7 +152,6 @@ indented under the only directive.
      .. include:: ../../../shared/building_and_running_chapters/running_course/Section_course_student.rst
 
 
-
 *********************************
 Notes and Warnings
 *********************************
