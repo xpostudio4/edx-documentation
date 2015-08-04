@@ -977,8 +977,8 @@ code
 Columns in the verify_student_verificationstatus Table
 =======================================================
 
-The ``verify_student_verificationstatus`` table shows re-verification attempts
-and outcomes. The possible outcomes are success, failure, and error.
+The ``verify_student_verificationstatus`` table shows learner re-verification
+attempts and outcomes.
 
 **History**: Added XX August 2015.
 
