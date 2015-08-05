@@ -4,6 +4,19 @@
 Change Log
 ###########
 
+**********************
+July-September 2015
+**********************
+
+.. list-table::
+   :widths: 20 70
+   :header-rows: 1
+
+   * - Date
+     - Change
+   * - 5 Aug 15
+     - Added information about the :ref:`verify_student_verificationstatus`
+       table.
 
 **********************
 April-June 2015

@@ -114,13 +114,7 @@ User Data
 The following tables store data gathered during site registration and course
 enrollment.
 
-* :ref:`auth_user`
-* :ref:`auth_userprofile`
-* :ref:`student_courseenrollment`
-* :ref:`user_api_usercoursetag`
-* :ref:`user_id_map`
-* :ref:`student_languageproficiency`
-* :ref:`verify_student_verificationstatus`
+.. contents::
 
 .. _auth_user:
 
@@ -796,7 +790,49 @@ mode
 
   * The "audit" value was deprecated on 23 Oct 2014.
 
-  .. _user_api_usercoursetag:
+
+.. _student_languageproficiency:
+
+=================================================
+Columns in the student_languageproficiency Table
+=================================================
+
+The ``student_languageproficiency`` table stores information about students'
+self-reported language preferences. Students can select only one value.
+
+**History**: Added 22 April 2015.
+
++-----------------+-------------+------+-----+---------+----------------+
+| Field           | Type        | Null | Key | Default | Extra          |
++-----------------+-------------+------+-----+---------+----------------+
+| id              | int(11)     | NO   | PRI | NULL    | auto_increment |
++-----------------+-------------+------+-----+---------+----------------+
+| user_profile_id | int(11)     | NO   | MUL | NULL    |                |
++-----------------+-------------+------+-----+---------+----------------+
+| code            | varchar(16) | NO   | MUL | NULL    |                |
++-----------------+-------------+------+-----+---------+----------------+
+
+---------
+id
+---------
+ 
+  A database auto-increment field that uniquely identifies the language. This
+  field is not exposed through the API.
+
+----------------
+user_profile_id
+----------------
+
+  Specifies the ID in the ``authuser_profile`` table that is associated with a
+  particular language proficiency.
+   
+----
+code
+----
+  The language code. Most codes are ISO 639-1 codes, with the addition of
+  codes for simplified and traditional Chinese.
+
+.. _user_api_usercoursetag:
 
 ============================================
 Columns in the user_api_usercoursetag Table
@@ -930,46 +966,7 @@ username
 -----------
   The student's username in ``auth_user.username``. 
 
-.. _student_languageproficiency:
 
-=================================================
-Columns in the student_languageproficiency Table
-=================================================
-
-The ``student_languageproficiency`` table stores information about students'
-self-reported language preferences. Students can select only one value.
-
-**History**: Added 22 April 2015.
-
-+-----------------+-------------+------+-----+---------+----------------+
-| Field           | Type        | Null | Key | Default | Extra          |
-+-----------------+-------------+------+-----+---------+----------------+
-| id              | int(11)     | NO   | PRI | NULL    | auto_increment |
-+-----------------+-------------+------+-----+---------+----------------+
-| user_profile_id | int(11)     | NO   | MUL | NULL    |                |
-+-----------------+-------------+------+-----+---------+----------------+
-| code            | varchar(16) | NO   | MUL | NULL    |                |
-+-----------------+-------------+------+-----+---------+----------------+
-
----------
-id
----------
- 
-  A database auto-increment field that uniquely identifies the language. This
-  field is not exposed through the API.
-
-----------------
-user_profile_id
-----------------
-
-  Specifies the ID in the ``authuser_profile`` table that is associated with a
-  particular language proficiency.
-   
-----
-code
-----
-  The language code. Most codes are ISO 639-1 codes, with the addition of
-  codes for simplified and traditional Chinese.
 
 .. _verify_student_verificationstatus:
 
@@ -980,44 +977,52 @@ Columns in the verify_student_verificationstatus Table
 The ``verify_student_verificationstatus`` table shows learner re-verification
 attempts and outcomes.
 
-**History**: Added XX August 2015.
+**History**: Added 5 August 2015.
+
+A sample of the heading row and a data row in the
+verify_student_verificationstatus table follow.
 
 .. code-block:: sql
 
-    timestamp  status course_id checkpoint_name user_id 
+    timestamp  status course_id checkpoint_location user_id 
 
     2015-04-28 12:13:22 submitted edX/DemoX/Demo_Course Final 9999999 
 
 
 The ``verify_student_verificationstatus`` table has the following columns.
 
-+-----------------+-------------+------+-----+---------+----------------+
-| Field           | Type        | Null | Key | Default | Extra          |
-+-----------------+-------------+------+-----+---------+----------------+
-| timestamp       |             |      |     |         |                |
-+-----------------+-------------+------+-----+---------+----------------+
-| status          |             |      |     |         |                |
-+-----------------+-------------+------+-----+---------+----------------+
-| course_id       |             |      |     |         |                |
-+-----------------+-------------+------+-----+---------+----------------+
-| checkpoint_name |             |      |     |         |                |
-+-----------------+-------------+------+-----+---------+----------------+ 
-|user_id          |             |      |     |         |                |
-+-----------------+-------------+------+-----+---------+----------------+
++----------------------+--------------+------+-----+---------+----------------+
+| Field                | Type         | Null | Key | Default | Extra          |
++----------------------+--------------+------+-----+---------+----------------+
+| timestamp            | datetime     | NO   |     | NULL    |                |
++----------------------+--------------+------+-----+---------+----------------+
+| status               | varchar(32)  | NO   | MUL | NULL    |                |
++----------------------+--------------+------+-----+---------+----------------+
+| course_id            | varchar(255) | NO   | MUL | NULL    |                |
++----------------------+--------------+------+-----+---------+----------------+
+| checkpoint_location  | varchar(255) | NO   |     | NULL    |                |
++----------------------+--------------+------+-----+---------+----------------+
+| user_id              | int(11)      | NO   | MUL | NULL    |                |
++----------------------+--------------+------+-----+---------+----------------+
 
 ---------
 timestamp
 ---------
  
   The date and time at which the user's verification status changed, in UTC.
-  This column can have one of the following statuses.
+
+---------
+status
+---------
+
+  This column can have one of the following values.
 
   * ``submitted``: The user has submitted photos for re-verification.
-  * ``approved``: The verification service, Software Secure, successfully
-    verified the user's identity.
-  * ``denied``: The verification service, Software Secure, determined that the
-    user's re-verification photo does not match the photo on the ID that the
-    user submitted at the start of the course.
+  * ``approved``: The verification service successfully verified the user's
+    identity.
+  * ``denied``: The verification service determined that the user's re-
+    verification photo does not match the photo on the ID that the user
+    submitted at the start of the course.
   * ``error``: An error occurred during the verification process.
 
 ---------
@@ -1026,20 +1031,21 @@ course_id
 
   The ID of the course run that the user is re-verifying for.
 
-----------------
-checkpoint_name
-----------------
+--------------------
+checkpoint_location
+--------------------
 
   The point in the course at which the user was prompted to re-verify his or
-  her identity. As of August 2015, course authors can define these fields when
-  they create the course. Because these checkpoints typically occur before
-  exams, examples of expected values are ``final`` and ``midterm``.
+  her identity. As of August 2015, course authors can define these checkpoints
+  when they create the course. Because these checkpoints typically occur
+  before exams, examples of expected values are ``final`` and ``midterm``.
 
 --------
 user_id
 --------
 
-  The ID of the user who is re-verifying his or her identity.
+  Student's ID in ``auth_user.id``. Identifies the student who is re-verifying
+  his or her identity.
 
 
 .. _Courseware_Progress:
