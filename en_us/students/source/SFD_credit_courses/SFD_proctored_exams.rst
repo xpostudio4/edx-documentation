@@ -515,14 +515,14 @@ To take a practice proctored exam, follow these steps.
    exam. Because this is a practice exam, your proctoring session is not
    reviewed. For a practice exam, you will see two possible results.
 
-  *  **Your practice proctored exam is complete** -- This status indicates
-     that you completed the exam and experienced no issues with the
-     proctoring software.
+   *  **Your practice proctored exam is complete** -- This status indicates
+      that you completed the exam and experienced no issues with the proctoring
+      software.
 
-  *  **Your practice proctored exam failed** -- This status indicates that you
-     completed the exam, but there were issues with the proctoring software.
-     Some parts of the proctoring checks might have failed, or the
-     proctoring software window might have been closed before the exam ended.
+      **Your practice proctored exam failed** -- This status indicates that you
+      completed the exam, but there were issues with the proctoring software.
+      Some parts of the proctoring checks might have failed, or the proctoring
+      software window might have been closed before the exam ended.
 
 You can retry a practice exam as many times as you want to. If you received a
 **Failed** result on your practice exam, you should try to fix any issues and
@@ -558,12 +558,12 @@ To take a proctored exam, follow these steps.
 
 #. In the courseware, open the proctored exam.
 
-  .. image:: /Images/Proctoring_ChooseProctoring.png
-   :width: 600
-   :alt: Verified track learners can choose whether to take the proctored exam
+   .. image:: /Images/Proctoring_ChooseProctoring.png
+    :width: 600
+    :alt: Verified track learners can choose whether to take the proctored exam
        with proctoring or not.
 
-2. On the page where you agree to or decline taking the exam with online
+#. On the page where you agree to or decline taking the exam with online
    proctoring, select **Yes, I want to take this exam with online
    proctoring**.
 

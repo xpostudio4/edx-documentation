@@ -32,13 +32,11 @@ To receive academic credit for a course, you must enroll in the verified track
 for the course. 
 
 For more information about enrolling, see :ref:`SFD Enrolling in a Course`.
-for the course.
 
 *****************************
 Complete Identity Checks
 *****************************
 
-<<<<<<< HEAD
 When you take a course for academic credit, you have to complete a
 number of identity checks. Identity checks include periodic identity
 reverification inside the course and proctored exams.
@@ -112,14 +110,6 @@ software. To pass a proctored exam, you must receive both a passing grade for
 the exam itself and a Pass result when the recording of your proctoring
 session is reviewed.
 
-Before you begin a proctored exam, you must specify whether you want to take
-the exam as a proctored exam. If you take the exam as a proctored exam, you
-receive instructions to install the proctoring software, verify your identity,
-and scan the desk and room where you are taking the exam.
-
-If you do not take the exam as a proctored exam, the exam is still timed.
-However, you are no longer eligible for credit for the course.
-
 For more information about proctored exams, see :ref:`SFD_ProctoredExams`.
 
 *****************************
@@ -139,7 +129,6 @@ individual requirement.
 
 .. update image when sandbox ready (8/7: currently can't show anything but
 .. "Upcoming" status)
-
 
 *****************************
 Purchase Academic Credit
@@ -173,18 +162,7 @@ To purchase academic credit, follow these steps.
 .. Yes, I know the last two instances of "Checkout" should be "Check Out".
 .. Long story.
 
-#. Follow the instructions to complete the payment process. When the payment
-   process is complete, a confirmation page opens, and you receive an email
-   message.
-#. On the payment confirmation page, a notification informs you if the
-   organization requires you to complete additional steps to receive credit.
-   If the organization has additional requirements, select **Complete Credit**
-   to go to that organization's website.
-
-After the organization has evaluated your information, a message on your
-dashboard indicates whether the organization has granted you academic credit
-
-#. Follow the onscreen instructions to complete the payment process. When the
+3. Follow the onscreen instructions to complete the payment process. When the
    payment process is complete, a confirmation page opens, and you receive an
    email message.
 #. On the payment confirmation page, note whether the organization requires
