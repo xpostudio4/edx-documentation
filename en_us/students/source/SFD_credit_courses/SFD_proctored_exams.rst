@@ -6,6 +6,10 @@ Proctored Exams
 
 This section describes how proctored exams work, requirements for the
 proctoring software, and steps involved in taking proctored exams.
+.. Carol: The following is the intro info you wrote for this. Since I changed
+.. the files a bit I ended up just using the first paragraph in
+.. SFD_credit_courses.rst, but I wanted to include all of the text here in
+.. case we come up with another use for it.
 
 .. contents::
  :local:
