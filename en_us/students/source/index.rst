@@ -21,6 +21,7 @@ edX Learner's Guide
    SFD_video_player
    SFD_google_docs
    SFD_certificates
+   SFD_teams
    SFD_mobile
    SFD_mathformatting
    SFD_ORA
