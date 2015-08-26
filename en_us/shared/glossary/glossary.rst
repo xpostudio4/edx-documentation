@@ -297,6 +297,20 @@ E
 
   For more information, see `What is Studio?`_.
 
+.. _embargo:
+
+**Embargo**
+
+  Embargoed countries are those that are subject to economic or trade
+  sanctions. Due to U.S. federal regulations, edX cannot offer certain courses
+  (such as particular advanced STEM courses) to learners in embargoed
+  countries. Learners are not able to access restricted courses from an
+  embargoed country.
+
+.. In the grade report for a course, learners from embargoed countries have a value of "No" in the **Certificate Eligible** column, regardless of the grades they attained. For information about the grade report, see `Interpret the Grade Report`_.
+
+.. Why would students be able to take the course at all if they are from an embargoed country?
+
 
 .. _Exercises:
  
@@ -788,6 +802,20 @@ V
 W
 ****
 
+.. _Whitelist:
+
+**Whitelist**
+
+  A list of learners who are indicated as being eligible to receive a
+  certificate in a course, regardless of whether they would otherwise have
+  qualified based on their grade.
+
+  In the grade report for a course, whitelisted learners have a value of "Yes"
+  in the **Certificate Eligible** column, regardless of the grades they
+  attained. For information about the grade report, see `Interpret the Grade
+  Report`_.
+
+
 .. _Wiki:
  
 **Wiki**
@@ -876,3 +904,4 @@ XYZ
 .. _LON-CAPA: http://www.lon-capa.org/
 .. _Open Response Assessments: http://edx.readthedocs.org/projects/edx-partner-course-staff/en/latest/exercises_tools/open_response_assessments/OpenResponseAssessments.html
 .. _Adding a Pre-Roll Video: http://edx.readthedocs.org/projects/edx-partner-course-staff/en/latest/creating_content/create_video.html#adding-a-pre-roll-video
+.. _Interpret the Grade Report: http://edx.readthedocs.org/projects/edx-partner-course-staff/en/latest/running_course/course_grades.html#access-grades
