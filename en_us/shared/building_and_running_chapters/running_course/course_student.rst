@@ -149,8 +149,11 @@ To view student data, follow these steps.
   :alt: Table with columns for the collected data points and rows for each 
         student on the Instructor Dashboard
 
-For courses that have the cohorts feature enabled, this report also includes a
-Cohort column with each student's assigned cohort group.
+For courses that include cohorts or teams, this report also includes columns
+with the names of the cohort group and team that the student belongs to. If
+the teams feature is enabled but the student has not joined a group, the team
+name column is empty.
+
 
 .. note:: The columns for language and location are included in this report 
  for backward compatibility only. This data is no longer collected during
