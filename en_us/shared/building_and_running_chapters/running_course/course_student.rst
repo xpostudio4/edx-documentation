@@ -151,8 +151,8 @@ To view student data, follow these steps.
 
 For courses that include cohorts or teams, this report also includes columns
 with the names of the cohort group and team that the student belongs to. If
-the teams feature is enabled but the student has not joined a group, the team
-name column is empty.
+the teams feature is enabled but the student has not joined a group, the **team**
+column is empty.
 
 
 .. note:: The columns for language and location are included in this report 
