@@ -4,6 +4,7 @@
 Enrolling in a Course
 ##############################
 
+<<<<<<< HEAD
 This topic describes how to enroll and verify your identity in an edX course.
 
 .. contents::
@@ -18,8 +19,7 @@ To enroll in a course, follow these steps.
 
 #. On the edX home page, select the course that you want.
 
-#. When the About page for the course opens, select **Enroll Now** in the
-   upper right corner of the page.
+#. When the **About** page for the course opens, select **Enroll Now**.
 
   * If the course only offers honor code certificates, you are enrolled in the
     course after you select **Enroll Now**.
@@ -75,9 +75,9 @@ When you verify your identity for one course, you verify your identity for all
 edX courses. Verification is effective for one year. If you enroll in another
 verified course within that year, you do not have to verify your identity.
 
-.. note:: If you enroll in a course that offers academic credit, you might have
- to verify your identity periodically during the course. For more information,
- see :ref:`SFD Academic Course Credit`.
+.. note:: If you enroll in a course that offers academic credit, you might
+ have to verify your identity periodically during the course. For more
+ information, see :ref:`SFD Academic Course Credit`.
 
 To verify your identity, follow these steps.
 
@@ -91,7 +91,7 @@ To verify your identity, follow these steps.
     on the payment confirmation page.
 
   * If you enrolled in the course as an honor code learner, select **Upgrade to
-    Verified Track** next to the course on your dashboard.
+    Verified Track** for the course on your dashboard.
 
   * If you enrolled as a verified learner and submitted payment but did not
     verify your identity, select **Verify Now** next to the course on your

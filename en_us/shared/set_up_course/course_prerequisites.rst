@@ -5,9 +5,9 @@ Set Course Prerequisites
 #########################
 
 You might want to make sure that your students have a specific set of skills
-and knowledge before they take your course. 
+and knowledge before they take your course.
 
-.. contents:: 
+.. contents::
  :local:
  :depth: 1
 
@@ -20,17 +20,17 @@ Specify Prerequisite Courses
 
 You can require that your students pass a particular edX course before they
 enroll in your course. Students see information about course prerequisites on
-the course About page.
+the course **About** page.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/PrereqAboutPage.png
   :width: 500
   :alt: A course About page with prerequisite course information circled.
 
 If students have not completed the prerequisite course, they can enroll in your
-course and then see your course on the Student Dashboard. However, unlike with
-other courses, the Student Dashboard does not provide a link to the courseware.
-The Student Dashboard includes a link to the About page for the prerequisite
-course. Students can enroll in the prerequisite course from the About page.
+course and then see your course on their learner dashboards. However, unlike
+with other courses, the dashboard does not provide a link to the courseware.
+The dashboard includes a link to the **About** page for the prerequisite
+course. Students can enroll in the prerequisite course from the **About** page.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Prereq_StudentDashboard.png
   :width: 500
@@ -40,7 +40,7 @@ course. Students can enroll in the prerequisite course from the About page.
 To define one course as the prerequisite for another, you must be the course
 creator in both the current course and in the prerequisite course.
 
-To specify a prerequisite course, follow these steps. 
+To specify a prerequisite course, follow these steps.
 
 #. In Studio, open your course.
 #. On the **Settings** menu, select **Schedule & Details**.
@@ -68,8 +68,8 @@ until they pass the exam.
    the left.
 
 
-After students pass the exam, they can access all released materials in your 
-course. 
+After students pass the exam, they can access all released materials in your
+course.
 
 To require an entrance exam, follow these steps.
 
@@ -95,8 +95,9 @@ students have a positive experience with entrance exams.
   your other course content.
 
 * Make sure that you mention the entrance exam in the course description on
-  your course About page. Otherwise, students will not know about the entrance
-  exam before they enroll in your course and try to access course content.
+  your course **About** page. Otherwise, students will not know about the
+  entrance exam before they enroll in your course and try to access course
+  content.
 
 * Add an anouncement at the top of the **Course Updates & News** page that
   contains information and instructions for students who need to take the exam.

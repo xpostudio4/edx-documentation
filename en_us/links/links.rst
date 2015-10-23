@@ -41,17 +41,13 @@
 
 .. _edx-analytics-configuration: https://github.com/edx/edx-analytics-configuration
 
-
 .. _edX Partner Support: https://partners.edx.org/edx_zendesk
-
 
 .. _edX pattern library: http://ux.edx.org/elements/colors/
 
 .. GitHub Links
 
 .. _EdX Search: https://github.com/edx/edx-search/
-
-.. _GitHub Flow: https://github.com/blog/1557-github-flow-in-the-browser
 
 .. _GitHub Flow: https://github.com/blog/1557-github-flow-in-the-browser
 

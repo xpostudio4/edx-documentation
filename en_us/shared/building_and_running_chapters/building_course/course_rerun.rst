@@ -104,7 +104,7 @@ Using Re-Run to Create a Course
 
       .. image:: ../../../shared/building_and_running_chapters/Images/Rerun_link.png
         :alt: A course listed on the dashboard with the Re-run Course and View
-           Live options shown
+           Live options shown.
         :width: 600
 
    #. Locate the course you want to re-run and select **Re-Run Course**. The
@@ -124,8 +124,8 @@ Using Re-Run to Create a Course
    characters used for the name, organization, number, and run must be 65 or
    fewer.
 
-   5. Select **Create Re-Run**. Your **My Courses** dashboard opens with a status
-   message about the course creation process.
+   5. Select **Create Re-Run**. Your **My Courses** dashboard opens with a
+      status message about the course creation process.
 
    Duplication of the course structure and content takes several minutes. You
    can work in other parts of Studio or in the LMS, or on other web sites,

@@ -127,7 +127,7 @@ Certificate Types
     Verified certificates are available for a fee that varies by course. The
     fee helps support edX. If you want to donate to edX, you can choose to pay
     more than the minimum required fee. For more information about the fee for
-    a particular course, see the About page for that course.
+    a particular course, see the **About** page for that course.
 
     When you enroll in the verified certificate track for a course, you must
     submit a payment before you can see course content. You do not have to
@@ -315,8 +315,8 @@ complete any additional steps to obtain your certificate.
 Be aware, however, that different self-paced courses issue certificates at
 different intervals. Some courses issue certificates once a month, and others
 issue certificates less frequently. For more information about your course's
-specific certificate schedule, see the About page or the **Course Info** tab
-for your course.
+specific certificate schedule, see the course **About** page or the **Course
+Info** page.
 
 .. _SFD On Demand Certificates:
 
@@ -328,7 +328,7 @@ Some self-paced courses offer on-demand certificates. These certificates
 allow you to request and download your certificate as soon as you complete
 enough of the course with a high enough grade to qualify for a certificate.
 You do not have to wait until you finish the course. You can usually find out
-if a course offers on-demand certificates on the course About page.
+if a course offers on-demand certificates on the course **About** page.
 
 If a course offers on-demand certificates, as soon as you have qualified for a
 certificate, you see the following message at the top of the course
