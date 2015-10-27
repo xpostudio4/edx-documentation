@@ -135,7 +135,7 @@ automatically. Other members of the course team can see your changes.
 .. _Add Course Team Members:
 
 ************************
-Add Course Team Members
+Addng Course Team Members
 ************************
 
 Course team members are users who help you build your course. Before you can
@@ -156,6 +156,15 @@ and complete all tasks, except adding and removing other team members.
 .. note::  Any course team member can delete content created by other team
  members.
 
+=========================
+Add a Course Team Member
+=========================
+
+.. important:: Course team members are not automatically enrolled in courses,
+   although they can access content in Studio, the LMS, and Insights. To work
+   on a course, every course team member must register, activate a user
+   account, and enroll in the course.
+
 To add a course team member, follow these steps.
 
 #. Ensure you have Admin access.
@@ -172,10 +181,7 @@ The new team member can now work on the course in Studio.
   discussion roles. For more information, see
   :ref:`Assigning_discussion_roles`.
 
-You can also assign privileged roles to users when you work in the LMS.
-
-Regardless of where the role is assigned, course team members can work on your
-course in Studio immediately, and use the LMS and Insights after enrollment.
+You can also assign these privileged roles to users when you work in the LMS.
 For more information about assigning roles while you run your course, see
 :ref:`Course_Staffing`.
 
