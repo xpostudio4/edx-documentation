@@ -75,7 +75,7 @@ several actions on your dashboard.
 
 * Change your course email settings.
 
-  #. Select the Options icon for the course, and then select **Course emails**. 
+  #. Select the Options icon for the course, and then select **Course emails**.
   #. Select or clear the **Receive course emails** check box, and then select
      **Save Settings**.
 
@@ -94,7 +94,7 @@ several actions on your dashboard.
   **Download Your ID Verified Certificate (PDF)**. You can then print the PDF
   certificate.
 
-.. _SFD Account Settings: 
+.. _SFD Account Settings:
 
 ****************************************
 Exploring the Account Settings Page
@@ -114,7 +114,7 @@ View or Change Basic Account Information
 ==========================================
 
 Basic account information includes the following information. This information
-is required for every account on edX. 
+is required for every account on edX.
 
 * **Username**: The name that identifies you on edx.org. Note that you cannot
   change your edX username.
@@ -154,15 +154,12 @@ Specify Additional Information
 ==========================================
 
 Additional account information is optional and includes the following
-information. 
+information.
 
 * **Education Completed**: The highest level of education that you have
   completed.
-
 * **Gender**: The gender you identify as.
-
-* **Year of Birth**: The year that you were born.  
-
+* **Year of Birth**: The year that you were born.
 * **Preferred Language**: The language that you prefer to communicate in.
 
 To view or change this information, follow these steps.
@@ -208,11 +205,10 @@ and other learners in your courses can view your profile.
 
 You can share a limited profile or a full profile.
 
-.. note:: If you are under 13 years of age, you can only share a limited
-   profile. However, you cannot add a profile picture and only your username
-   is shared with other edX users.
+.. note:: If you are under 13 years of age, your limited profile only includes
+   your username. You cannot add a profile picture.
 
-A limited profile can include only your username and an image.
+A limited profile includes only your username and, optionally, an image.
 
 .. image:: ../../../shared/getting_started/Images/SFD_Prof_Limited.png
  :width: 400
@@ -232,7 +228,7 @@ Create or Edit a Limited Profile
 A limited profile includes only your username and, optionally, an image.
 
 .. note:: If you are under 13 years of age, you cannot add a profile picture.
-   In your limited profile, only your username is shared with other edX users.
+   Other edX users see only your username in your limited profile.
 
 To create or edit a limited profile, follow these steps.
 
@@ -246,11 +242,9 @@ To create or edit a limited profile, follow these steps.
    Your image must be a .gif, .jpg, or .png file. The image must be between
    100 bytes and 1 MB in size. If you do not add an image, the placeholder
    image appears as your profile image.
-  
-   #. Move your cursor over the placeholder image, and then select **Upload
-      Image**.
-   
-   #. In the dialog box, select the image file that you want, and then select
+
+   #. Move your cursor over the placeholder image, and then select **Upload Image**.
+   #. In the dialog box, select the image file that you want, and then click
       **Open**.
 
    To change or remove your profile image, move your cursor over your image,
@@ -269,7 +263,7 @@ Create or Edit a Full Profile
 
 A full profile can include the following information. Your username and
 country or region are required.
- 
+
 * Your username.
 
 * An image that you select to identify you on the edX site.
@@ -313,7 +307,7 @@ To create or edit your profile, follow these steps.
 
 EdX saves your changes automatically.
 
-.. note:: If you change the profile type selection from **Full Profile** 
+.. note:: If you change the profile type selection from **Full Profile**
  to **Limited Profile**, your location, language, and descriptive paragraph
  are not visible on your profile page. However, this information is saved. To
  make this information visible again, select **Full Profile**.
@@ -337,4 +331,5 @@ username on the **Active Threads** page, and the learner's profile page.
   :width: 600
   :alt: Image of a discussion with a learner's username circled, an image of
       that learner's active threads page in the course discussions, and an
-      image of the learner's profile.
+      image of the learner's profile
+
