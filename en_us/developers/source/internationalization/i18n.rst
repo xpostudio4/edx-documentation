@@ -7,54 +7,52 @@ The rules here give the best practices for marking English strings in source
 so that it can be extracted, translated, and presented to the user in the
 language of their choice.
 
-See also:
+.. contents::
+  :local:
+  :depth: 1
+
+For more information, refer to these additional resources.
 
 * `Django Internationalization <https://docs.djangoproject.com/en/dev/topics/i18n/>`_ (overview)
 * `Django: Internationalizing Python code <https://docs.djangoproject.com/en/dev/topics/i18n/translation/#internationalization-in-python-code>`_
 * `Django Translation guidelines <https://docs.djangoproject.com/en/dev/topics/i18n/translation/>`_
 * `Django Format localization <https://docs.djangoproject.com/en/dev/topics/i18n/formatting/>`_
 
-Presented in this document are the following sections:
 
-* `General internationalization rules`_
-* `Editing source files`_
-* `Coverage testing`_
-* `Style guidelines`_
-
-
-General internationalization rules
+General Internationalization Rules
 **********************************
 
-In order to localize source files, we need to prepare them so that the
-human-readable strings can be extracted by a pre-processing step, and then have
+In order to localize source files, we need to prepare them so that the human-
+readable strings can be extracted by a pre-processing step, and then have
 localized strings used at runtime.  This requires attention to detail, and
-unfortunately limits what you can do with strings in the code.  In general:
+unfortunately limits what you can do with strings in the code.  In general,
+follow these guidelines.
 
-1. Always mark complete sentences for translation.  If you combine fragments at
+1. Always mark complete sentences for translation. If you combine fragments at
    runtime, there is no way for the translator to construct a proper sentence
    in their language.
 
-2. Don't join strings together at runtime to create sentences.
+2. Do not join strings together at runtime to create sentences.
 
 3. Limit the amount of text in strings that is not presented to the user.  HTML
    markup is better applied after the translation.  If you give HTML to the
-   translators, there's a good chance they will translate your tags or
+   translators, there is a good chance they will translate your tags or
    attributes.
 
 4. Use placeholders with descriptive names: ``"Welcome {student_name}"`` is
    much better than ``"Welcome {0}"``.
 
-See the detailed Style Guidelines at the end for details.
+For more information, see the detailed :ref:`Style Guidelines`.
 
-
-Editing source files
+Editing Source Files
 ********************
 
 While editing source files (including Python, JavaScript, or HTML template
 files), use the appropriate conventions.  There are a few things to know how to
-do:
+do.
 
-1. What has to be at the top of the file (if anything) to prepare it for i18n.
+1. What has to be at the top of the file (if anything) to prepare it for
+   internationalization (i18n).
 
 2. How are strings marked for internationalization?  This takes the form of a
    function call with the string as an argument.
@@ -67,38 +65,38 @@ do:
 
 The code samples below show how to do each of these things for:
 
-* `Python source code`_
-* `Django template files`_
-* `Mako template files`_
-* `JavaScript files`_
-* `Coffeescript files`_
-* `Underscore template files`_
-* `Other types of content`_
+.. contents::
+  :local:
+  :depth: 1
 
-Note that you have to take into account not just the programming language involved,
-but the type of file: JavaScript embedded in an HTML Mako template is treated differently
-than JavaScript in a pure .js file.
+Note that you have to take into account not just the programming language
+involved, but the type of file. For example, JavaScript embedded in an HTML
+Mako template is treated differently than JavaScript in a pure .js file.
 
-Python source code
+Python Source Code
 ==================
 
 .. highlight:: python
 
-In most Python source code (read the Django docs for more details)::
+In most Python source code (read the Django docs for more details).
+
+::
 
     from django.utils.translation import ugettext as _
-    
+
     # Translators: This will help the translator
     message = _("Welcome!")
-    
+
     # Translators: This is a very long comment that needs to wrap
     # over multiple lines because it would be too long otherwise.
     message = _("Hello world")
 
 Some edX code cannot use Django imports. To maintain portability, XBlocks,
 XModules, Inputtypes and Responsetypes forbid importing Django.  Each of these
-has its own way of accessing translations.  You'll use lines like these
-instead::
+has its own way of accessing translations.  You use lines like these
+instead.
+
+::
 
     ### for XBlock & XModule:
     _ = self.runtime.service(self, "i18n").ugettext
@@ -110,11 +108,11 @@ instead::
     # Translators: a greeting to newly-registered students.
     message = _("Welcome!")
 
-"Translators" comments will work in these places too, so don't be shy about
-providing clarifying comments to the translators.
+"Translators" comments will work in these places too, so go ahead and provide
+clarifying comments to the translators.
 
 
-Django template files
+Django Template Files
 =====================
 
 .. highlight:: django
@@ -122,11 +120,11 @@ Django template files
 In Django template files (`templates/*.html`)::
 
     {% load i18n %}
-    
+
     {# Translators: this will help the translator. #}
     {% trans "Welcome!" %}
 
-Mako template files
+Mako Template Files
 ===================
 
 .. highlight:: mako
@@ -136,7 +134,7 @@ available to python programmers. Just make sure to import the relevant
 functions first. Here's a Mako template example::
 
     <%! from django.utils.translation import ugettext as _ %>
- 
+
     ## Translators: message to the translator. This comment may
     ## wrap on to multiple lines if needed, as long as they are
     ## lines directly above the marked up string.
@@ -145,7 +143,7 @@ functions first. Here's a Mako template example::
 Make sure that all Mako comments, including translators comments, begin
 with *two* pound signs (#).
 
-JavaScript files
+JavaScript Files
 ================
 
 .. highlight:: javascript
@@ -164,7 +162,7 @@ Then, in JavaScript files (`*.js`)::
 Note that JavaScript embedded in HTML in a Mako template file is handled
 differently.  There, you use the Mako syntax even within the JavaScript.
 
-Coffeescript files
+Coffeescript Files
 ==================
 
 .. highlight:: coffeescript
@@ -192,7 +190,7 @@ native Coffeescript features that break the extraction from the .js files:
     # NO NO not like this:
     # Translators: this won't get to the translators!
     message = gettext("Welcome, #{student_name}!")  # This won't work!
-    
+
     # YES like this:
     `// Translators: this will get to the translators.`
     message = gettext("This works")
@@ -201,10 +199,10 @@ native Coffeescript features that break the extraction from the .js files:
     Translators: This will work, but takes three lines :(
     ###
     message = gettext("Hey there")
- 
+
 .. highlight:: python
 
-Underscore template files
+Underscore Template Files
 =========================
 
 Underscore template files are used in conjunction with JavaScript, and so the
@@ -222,24 +220,25 @@ For example::
         )
     %>
 
-Note: it is recommended that you use ``<%-`` for all translated strings
-as this will HTML escape the string before including it in the page. This
-ensures that translations are free to use non-HTML characters.
-Important note: Due to the bug in the underlying underscore extraction library,
-when ```interpolate``` and ```gettext``` are in the same line, the library will
-not work properly; in such situation, the library will just extract the word 
-```gettext``` rather than the actual string need to be extracted. So please make 
-sure to separate ```interpolate``` and ```gettext``` into two different lines, 
-just like the above example does.
+.. Note:: EdX recommends that you use ``<%-`` for all translated strings
+ as this will HTML escape the string before including it in the page. This
+ ensures that translations are free to use non-HTML characters.
+
+.. Important::
+ Due to the bug in the underlying underscore extraction library, when
+ ```interpolate``` and ```gettext``` are in the same line, the library will not
+ work properly; in such situation, the library will just extract the word
+ ```gettext``` rather than the actual string need to be extracted. So please
+ make sure to separate ```interpolate``` and ```gettext``` into two different
+ lines, just like the above example does.
 
 Currently, translators comments are not supported in Underscore template files,
 as the underlying library does not parse them out. We recommend you add them in
-using standard comment syntax, so that when work is done to support these comments,
-we already have them defined. Additionally, translators comments in the code
-will enable us to answer questions from translators.
+using standard comment syntax, so that when work is done to support these
+comments, we already have them defined. Additionally, translators comments in
+the code will enable us to answer questions from translators.
 
-
-Other types of content
+Other Types of Content
 ======================
 
 We have not yet established guidelines for internationalizing the following.
@@ -248,20 +247,19 @@ We have not yet established guidelines for internationalizing the following.
 
 * Documentation (written for Sphinx as .rst files)
 
-
 Coverage testing
 ****************
 
-These instructions assume you are a developer working on internationalizing
-new or existing user-facing features. To test that your code is properly i18n'd,
-you'll first generate a set of 'dummy' translations, then view those translations
-on your app's page to make sure everything (scraping and serving) is working
-properly.
+These instructions assume you are a developer working on internationalizing new
+or existing user-facing features. To test that your code is properly
+internationalized, you first generate a set of 'dummy' translations, then view
+those translations on your app's page to make sure everything (scraping and
+serving) is working properly.
 
 First, use the coverage tool to generate dummy files::
 
     $ paver i18n_dummy
-    
+
 This will create new dummy translations in the Esperanto directory
 (edx-platform/conf/local/eo/LC_MESSAGES) and the RTL directory
 (edx-platform/conf/local/rtl/LC_MESSAGES). DO NOT CHECK THESE FILES IN. You
@@ -272,25 +270,24 @@ Next, restart the LMS and Studio to load in the new translation files::
     $ paver devstack lms
     $ paver devstack studio
 
-When you visit Studio or the LMS, append
-``?preview-lang=eo`` to the URL to view the webpage in the dummy testing
-language.
+When you visit Studio or the LMS, append ``?preview-lang=eo`` to the URL to
+view the webpage in the dummy testing language.
 
 Instead of plain English strings, you should see specially-accented English
-strings that look like this:
+strings that look like this.
 
     Thé Fütüré øf Ønlïné Édüçätïøn Ⱡσяєм ι#
     Før änýøné, änýwhéré, änýtïmé Ⱡσяєм #
 
 This dummy text is distinguished by extra accent characters. If you see plain
 English instead (without these accents), it most likely means the string has
-not been marked for translation yet, or you've broken a rule. To fix this: 
+not been marked for translation yet, or you've broken a rule. To fix this:
 
 * Find the string in the source tree (either in Python, JavaScript, or HTML
-  template code). 
+  template code).
 
 * Refer to the above coding guidelines to make sure it has been externalized
-  properly. 
+  properly.
 
 * Rerun the scripts and confirm that the strings are now properly converted
   into dummy text.
@@ -299,7 +296,7 @@ This dummy text is also distinguished by Lorem ipsum text at the end of each
 string, and is always terminated with "#". The original English string is
 padded by about 30% extra characters, to simulate some language (like German)
 which tend to have longer strings than English. If you see problems with your
-page layout, such as columns that don't fit, or text that is truncated (the
+page layout, such as columns that do not fit, or text that is truncated (the
 ``#`` character should always be displayed on every string), then you will
 probably need to fix the page layouts accordingly to accommodate the longer
 strings.
@@ -307,17 +304,19 @@ strings.
 Finally, append ``?preview-lang=rtl`` to the end of your URL to view your
 feature in the dummy RTL language. Test to make sure that the UX is properly
 "flipped" to right-to-left mode. Note that certain page elements may not look
-correct because they are controlled by the browser. For the best testing, switch
-your browser's language to Arabic or another RTL language (Hebrew, Persian, or
-Urdu) as well. See our `RTL UI Guidelines`_ for information on fixing any issues
-that you find.
+correct because they are controlled by the browser. For the best testing,
+switch your browser's language to Arabic or another RTL language (Hebrew,
+Persian, or Urdu) as well. See our `RTL UI Guidelines`_ for information on
+fixing any issues that you find.
 
 When you are done reviewing, append ``?clear-lang`` to the LMS or Studio URL
 to reset your session to your base language.
 
 .. _RTL UI Guidelines: https://github.com/edx/edx-platform/wiki/RTL-UI-Best-Practices
 
-Style guidelines
+.. _Style Guidelines:
+
+Style Guidelines
 ****************
 
 Don't append strings, interpolate values
@@ -333,9 +332,10 @@ Bad::
     message = _("Welcome to the ") + settings.PLATFORM_NAME + _(" dashboard.")
 
 In this scenario, the translator will have to figure out how to translate these
-two separate strings. It is very difficult to translate a fragment like "Welcome to 
-the." In some languages the fragments will be in different order.
-For example, Spanish would order this phrase as "Welcome to the dashboard of edX".
+two separate strings. It is very difficult to translate a fragment like
+"Welcome to the." In some languages the fragments will be in different order.
+For example, Spanish would order this phrase as "Welcome to the dashboard of
+edX".
 
 It is much easier for a translator to figure out how to translate the entire
 sentence, using the pattern "Welcome to the {platform_name} dashboard."
@@ -345,8 +345,8 @@ Good::
     message = _("Welcome to the {platform_name} dashboard.").format(platform_name=settings.PLATFORM_NAME)
 
 
-Please note that you cannot concatenate within the gettext call at all. For example,
-this does not work:
+Please note that you cannot concatenate within the gettext call at all. For
+example, this does not work:
 
 Bad::
 
@@ -364,9 +364,9 @@ Good (Python only!)::
         "that hosts courses from world-class universities around the world!"
     ).format(platform_name=settings.PLATFORM_NAME)
 
-However, in Javascript and other languages, the gettext call cannot be broken up over
-multiple lines. You will have to live with long lines on gettext calls, and we make a
-style exception for this.
+However, in Javascript and other languages, the gettext call cannot be broken
+up over multiple lines. You will have to live with long lines on gettext calls,
+and we make a style exception for this.
 
 Use named placeholders
 ======================
@@ -405,14 +405,14 @@ The resulting output is correct in each language::
 Only translate literal strings
 ==============================
 
-As programmers, we're used to using functions in flexible ways.  But the
-translation functions like ``_()`` and ``gettext()`` can't be used like other
+As programmers, we are used to using functions in flexible ways.  But the
+translation functions like ``_()`` and ``gettext()`` cannot be used like other
 functions.  At runtime, they are real functions like any other, but they also
 serve as markers for the string extraction process.
 
 For string extraction to work properly, the translation functions must be
 called with only literal strings.  If you use them with a computed value,
-the string extracter won't have a string to extract.
+the string extracter will not have a string to extract.
 
 The difference between the right way and the wrong way can be very subtle:
 
@@ -495,7 +495,7 @@ Other places that might be problematic are HTML attributes::
 Singular vs plural
 ==================
 
-It's tempting to improve a message by selecting singular or plural based on a
+It is tempting to improve a message by selecting singular or plural based on a
 count::
 
     if count == 1:

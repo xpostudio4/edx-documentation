@@ -8,6 +8,10 @@ The edX LMS and Studio are instrumented to enable tracking of metrics and
 events of interest. These data can be used for educational research, decision
 support, and operational monitoring.
 
+.. contents::
+  :local:
+  :depth: 1
+
 The primary mechanism for tracking events is the `Event Tracking`_ API. It
 should be used for the vast majority of cases.
 
@@ -34,10 +38,10 @@ Emitting from client-side coffee script::
 
 .. note::
     The client-side API currently uses a deprecated library (the ``track``
-     djangoapp) instead of the event-tracking library. Eventually, event-tracking 
-     will publish a client-side API of its own: when available, that
-     API should be used instead of the ``track``-based solution. See
-     :ref:`deprecated_api`.
+     djangoapp) instead of the event-tracking library. Eventually, event-
+     tracking will publish a client-side API of its own: when available, that
+     API should be used instead of the ``track``-based solution. Doe more
+     information, see :ref:`deprecated_api`.
 
 Naming Events
 ==============
@@ -316,7 +320,7 @@ comments that identify the purpose of the event and its fields. Your
 descriptions and examples can help assure that researchers and other members
 of the open edX community understand your intent and use the events correctly.
 
-You might find the following references helpful as you prepare your PR. 
+You might find the following references helpful as you prepare your PR.
 
 * The *edX Platform Developer's Guide* provides guidelines for `contributing
   to open edX <http://edx.readthedocs.org/projects/edx-developer-
@@ -377,12 +381,12 @@ Segment
 
 A selection of events can be transmitted to `Segment`_ in order to take
 advantage of a wide variety of analytics-related third party services such as
-Mixpanel and Chartbeat. It is enabled in the LMS if the ``SEGMENT_KEY``
-key is set to a valid Segment API key in the ``lms.auth.json`` file. Additionally, 
-the setting ``EVENT_TRACKING_SEGMENTIO_EMIT_WHITELIST`` in the ``lms.auth.json`` 
-file can be used to specify event names that should be emitted to Segment 
-from normal ``tracker.emit()`` calls. Events specified in this whitelist will be 
-sent to both the tracking logs and Segment.  Similarly, it is enabled in Studio 
+Mixpanel and Chartbeat. It is enabled in the LMS if the ``SEGMENT_KEY`` key is
+set to a valid Segment API key in the ``lms.auth.json`` file. Additionally, the
+setting ``EVENT_TRACKING_SEGMENTIO_EMIT_WHITELIST`` in the ``lms.auth.json``
+file can be used to specify event names that should be emitted to Segment from
+normal ``tracker.emit()`` calls. Events specified in this whitelist will be
+sent to both the tracking logs and Segment.  Similarly, it is enabled in Studio
 if the ``SEGMENT_KEY`` key is set to a valid Segment API key in the
 ``cms.auth.json`` file.
 
