@@ -187,6 +187,10 @@
 
 ..  _mongodb: http://docs.mongodb.org/manual/
 
+.. _Time and Date Time Zone Converter: http://www.timeanddate.com/worldclock/converter.html
+
+.. _Time Zone Converter: http://www.timezoneconverter.com/cgi-bin/tzc.tzc
+
 .. _AWS Command Line Interface: http://aws.amazon.com/cli/
 
 .. _AWS Documentation: http://aws.amazon.com/documentation/
