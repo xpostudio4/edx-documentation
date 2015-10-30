@@ -69,14 +69,7 @@ length, the total number of characters that you enter for these values must be
 Create a Course
 *******************
 
-.. only:: Partners
-
-  To create a course on edX Edge, follow these steps.
-
-.. only:: only:: Open_edX
-
-  To create a course, follow these steps.
-
+To create a course, follow these steps.
 
 #. Sign in to Studio.
 
