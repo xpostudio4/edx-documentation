@@ -4,18 +4,26 @@
 Creating a Course
 ###########################
 
-This topic describes how to create a course with Studio.
+This topic describes how to use Studio to create and set up a course.
 
 .. contents::
   :local:
   :depth: 1
 
-Another way to create a course is to re-run an existing course. For more
-information, see :ref:`Rerun a Course`.
+.. only:: Partners
+
+   You can create courses on the edX Edge site only if you have course creation
+   permissions. For more information, see :ref:`Use Studio on Edge`. Only edX
+   staff members can create courses on edx.org.
+
+Another way to create a course is for a system administrator to re-run an
+existing course. For more information, see :ref:`Rerun a Course`.
 
 You can also :ref:`export<Export a Course>` and :ref:`import<Import a Course>`
 courses as XML files. You can do this when you need to back up a course or edit
 the course in XML.
+
+.. _Identifying the Course:
 
 **************************
 Identifying the Course
@@ -52,10 +60,8 @@ to create the URL for your course. Because URLs do not have an unlimited
 length, the total number of characters that you enter for these values must be
 65 or fewer.
 
-.. only:: Partners
-
-  .. note:: To change the course URL of a course on edx.org or edX Edge,
-     you must contact `edX Partner Support`_.
+.. important:: The values that you enter for the organization, course number,
+ and course run cannot be edited after you create your course.
 
 .. _Create a New Course:
 
@@ -63,13 +69,21 @@ length, the total number of characters that you enter for these values must be
 Create a Course
 *******************
 
-To create a course, follow these steps.
+.. only:: Partners
+
+  To create a course on edX Edge, follow these steps.
+
+.. only:: only:: Open_edX
+
+  To create a course, follow these steps.
+
 
 #. Sign in to Studio.
 
 #. Select **New Course**.
 
-#. Enter the identifying course information, and then select **Create**.
+#. Enter the :ref:`identifying course information<Identifying the Course>`, and
+   then select **Create**.
 
   .. image:: ../../../shared/building_and_running_chapters/Images/new_course_info.png
      :width: 600
@@ -101,46 +115,44 @@ team privileges.
 To edit a course, select the course name. The Studio **Course Outline** page
 appears.
 
-.. _Use the Course Checklist:
+.. Topic commented out per M. Rudnick as the course checklist is sending people to info that is not just out of date, it's bad. - Alison 30 Oct 15
 
-************************
-Use the Course Checklist
-************************
+.. .. _Use the Course Checklist:
 
-You can use a Course Checklist within Studio to help you work through the tasks
-of building a course.
+.. ************************
+.. Use the Course Checklist
+.. ************************
 
-Tasks in the Course Checklist are organized into the following categories.
+.. You can use a Course Checklist within Studio to help you work through the tasks of building a course.
 
-* Getting Started with Studio
-* Draft a Rough Course Outline
-* Explore edX's Support Tools
-* Draft Your Course About Page
+.. Tasks in the Course Checklist are organized into the following categories.
 
-From the **Tools** menu, select **Checklists**.
+.. * Getting Started with Studio
+.. * Draft a Rough Course Outline
+.. * Explore edX's Support Tools
+.. * Draft Your Course About Page
 
-.. image:: ../../../shared/building_and_running_chapters/Images/checklist.png
+.. From the **Tools** menu, select **Checklists**.
+
+.. .. image:: ../../../shared/building_and_running_chapters/Images/checklist.png
   :width: 600
   :alt: Image of the Getting Started with Studio checklist in Studio.
 
-As shown in this example for the **Add Course Team Members** task, when you
-move your cursor over a task, an option appears that you can select to go to
-the page where you can complete that task.
+.. As shown in this example for the **Add Course Team Members** task, when you move your cursor over a task, an option appears that you can select to go to the page where you can complete that task.
 
-You can expand and collapse the checklist categories as needed.
+.. You can expand and collapse the checklist categories as needed.
 
-You can check tasks as you complete them. Studio saves your changes
-automatically. Other members of the course team can see your changes.
+.. You can check tasks as you complete them. Studio saves your changes automatically. Other members of the course team can see your changes.
 
 .. _Add Course Team Members:
 
-************************
+**************************
 Addng Course Team Members
-************************
+**************************
 
 Course team members are users who help you build your course. Before you can
-assign Staff or Admin access to a team member, you must meet these
-prerequisites.
+assign the Staff or Admin role to a team member so that they can access your
+course in Studio, you must meet these prerequisites.
 
 * You must be an Admin.
 

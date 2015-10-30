@@ -23,6 +23,11 @@ prospective learners can see your course in the course catalog, view the
 course **About** page, and enroll in the course. Current learners see your
 course start or end date on their dashboards.
 
+.. only:: Partners
+
+   .. note:: Only edX staff members can define the enrollment dates for
+    courses on edx.org.
+
 .. _Determine Start and End Dates:
 
 *******************************************
@@ -35,12 +40,14 @@ your course, you set these dates and times on the **Schedule & Details** page
 in Studio. EdX recommends that you verify all important dates in Studio one
 week before you plan to start the course.
 
+.. contents::
+  :local:
+  :depth: 1
+
 .. only:: Partners
 
-  .. note::
-    For courses on edX.org, you must communicate the course start and end dates
-    and times to your edX Partner Manager to ensure the information is accurate
-    on the course **About** page.
+   .. note:: Only edX staff members can define the enrollment dates for
+    courses on edx.org.
 
 ============================
 Course Start Date and Time
@@ -111,8 +118,7 @@ the course end date.
   .. important::
     For partner courses running on edx.org, when the enrollment end date
     passes, the course is no longer listed in the course catalog. EdX
-    encourages you to keep enrollment open as long as possible. For more
-    information, contact your edX Partner Manager.
+    encourages you to keep enrollment open as long as possible.
 
 .. _Set Start and End Dates:
 
@@ -120,7 +126,8 @@ the course end date.
 Set Course and Enrollment Dates and Times
 *******************************************
 
-You set dates and times for the course and for course enrollment in Studio.
+To set dates and times for the course and for course enrollment in Studio,
+follow these steps.
 
 #. From the **Settings** menu, select **Schedule & Details**.
 
@@ -209,9 +216,11 @@ dashboards. To access the dashboard, learners select their usernames and then
 For a course that is in progress or has not yet started, the start date is
 shown. For a course that has ended, the course end date is shown.
 
-.. note:: These sample images are from the edX Edge website. They show
- an **About** page and a learner dashboard on an instance powered by Open edX.
- On the `edx.org`_ website these pages present the same information, but are
- styled differently.
+.. only:: Partners
+
+  .. note:: These sample images are from the edX Edge website. They show
+   an **About** page and a learner dashboard on an instance powered by Open
+   edX. On the `edx.org`_ website these pages present the same information, but
+   are styled differently.
 
 .. include:: ../../../links/links.rst

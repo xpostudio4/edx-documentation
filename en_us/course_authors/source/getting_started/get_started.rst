@@ -11,16 +11,16 @@ create your first course.
  :local:
  :depth: 1
 
-If you are using an instance of Open edX, some specifics in this section might 
+If you are using an instance of Open edX, some specifics in this section might
 not apply.
 
-.. _What is Studio?:        
-            
+.. _What is Studio?:
+
 ***************
 What is Studio?
 ***************
 
-Studio is the edX tool you use to build your courses. 
+Studio is the edX tool you use to build your courses.
 
 You use Studio to create course content, problems, videos, and other resources
 for students.
@@ -39,8 +39,8 @@ Use Studio on Edge
 
 You also use Studio on Edge to build your own courses.
 
-Go to: https://studio.edge.edx.org. Sign in with the account you created on
-Edge.
+Go to the Studio website for Edge, located at https://studio.edge.edx.org. Sign
+in with the account you created on Edge.
 
 You must then request access to create courses.
 
@@ -51,9 +51,9 @@ You must then request access to create courses.
 
 EdX evaluates your request. When course creation permissions are granted,
 you are notified by email.
-  
-.. _Create Your First Course:  
-  
+
+.. _Create Your First Course:
+
 ***************************
 Create Your First Course
 ***************************
@@ -66,13 +66,13 @@ You see the following page, which is your **My Courses** dashboard:
  :width: 600
  :alt: The Studio home page where you create your first course.
 
-Select **Create Your First Course** and follow instructions in ths
+Select **Create Your First Course**, and then follow the instructions in ths
 :ref:`Creating a New Course` section.
 
-When you've created the course, you can view it on Edge.
-  
+After you create a course, you can view it in the Edge LMS.
+
 .. _View Your Course on Edge:
-    
+
 ************************
 View Your Course on Edge
 ************************
@@ -83,8 +83,8 @@ any content.
 In the Course Outline in Studio, select **View Live**. The course opens on
 Edge.
 
-You can also go directly to `edX Edge`_. Log in if prompted. You see the course you
-just created listed on your **My Courses** dashboard:
+You can also go directly to `edX Edge`_. Log in if prompted. You see the course
+you just created listed on your **My Courses** dashboard.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/new_course.png
  :width: 600
@@ -116,4 +116,3 @@ it, you must enroll in your course. You can then view it on the LMS.
    that shows Studio. You will still be on the **Course Outline** page.
 
 .. include:: ../../../links/links.rst
-
