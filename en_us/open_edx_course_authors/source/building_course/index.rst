@@ -15,6 +15,7 @@ see :ref:`Developing Your Course Index`.
    creating_new_course
    search_course
    scheduling_course
+   setting_pacing
    setting_up_student_view
    course_prerequisites
    licensing_course
@@ -28,4 +29,4 @@ see :ref:`Developing Your Course Index`.
    custom_courses
    export_import_course
    lti/index
-   
+
