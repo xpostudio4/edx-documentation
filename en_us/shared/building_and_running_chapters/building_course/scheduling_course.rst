@@ -78,7 +78,7 @@ topics as soon as they enroll in your course. For more information, see
 .. note::
   You can set a different advertised start date for your course. You might
   want to do this if there is uncertainty about the exact start date. For
-  example, you could advertise the start date as Spring 2015. For more
+  example, you could advertise the start date as "Coming Soon". For more
   information, see :ref:`Advertise a Different Start Date`.
 
 ============================
@@ -156,7 +156,7 @@ Advertise a Different Start Date
 You can advertise a start date for your course that is different from the
 course start date you set in the **Schedule & Details** page. You might want
 to do this if there is uncertainty about the exact start date. For example, you
-could advertise the start date as Spring, 2016.
+could advertise the start date as "Anytime, self-paced".
 
 To set an advertised start date in Studio, follow these steps.
 

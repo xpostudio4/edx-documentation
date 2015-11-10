@@ -11,8 +11,9 @@ create your first course.
  :local:
  :depth: 1
 
-If you are using an instance of Open edX, some specifics in this section might
-not apply.
+If you are using an instance of Open edX to create a course, see
+:ref:`opencoursestaff:Getting Started with Studio` in the *Building and Running
+an Open edX Course* guide.
 
 .. _What is Studio?:
 
@@ -25,8 +26,8 @@ Studio is the edX tool you use to build your courses.
 You use Studio to create course content, problems, videos, and other resources
 for students.
 
-With Studio, you can also manage your schedule and course team, set grading
-policies, publish your course, and more.
+With Studio, you can also manage the course schedule, identify members of the
+course team, set the grading policy, publish your course, and more.
 
 You use Studio directly through your browser. You do not need any additional
 software.
@@ -39,8 +40,8 @@ Use Studio on Edge
 
 You also use Studio on Edge to build your own courses.
 
-Go to the Studio website for Edge, located at https://studio.edge.edx.org. Sign
-in with the account you created on Edge.
+Go to the Studio website for Edge, located at ``https://studio.edge.edx.org``.
+Sign in with the account you created on Edge.
 
 You must then request access to create courses.
 
@@ -104,13 +105,12 @@ it, you must enroll in your course. You can then view it on the LMS.
 
 #. In Studio, create your course and add content.
 
-#. On the **Course Outline** page, select the blue **View
-   Live** button in the upper right corner of the page.
+#. On the **Course Outline** page, select **View Live**.
 
    Your course enrollment page opens in a new tab on the LMS.
 
-#. Select the blue **Enroll** button to enroll in your course. After you enroll
-   in your course, it opens in the LMS.
+#. Select **Enroll** to enroll in your course. After you enroll in your course,
+   it opens in the LMS.
 
 #. To continue working on your course, in your browser, switch back to the tab
    that shows Studio. You will still be on the **Course Outline** page.

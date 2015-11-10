@@ -108,15 +108,20 @@ team privileges.
 To edit a course, select the course name. The Studio **Course Outline** page
 appears.
 
-.. Topic commented out per M. Rudnick as the course checklist is sending people to info that is not just out of date, it's bad. - Alison 30 Oct 15
+.. _Use the Course Checklist:
 
-.. .. _Use the Course Checklist:
+************************
+Use the Course Checklist
+************************
 
-.. ************************
-.. Use the Course Checklist
-.. ************************
+You can use a Course Checklist within Studio to help you work through the tasks
+of building a course.
 
-.. You can use a Course Checklist within Studio to help you work through the tasks of building a course.
+The Studio Course Checklist is currently under development. The current
+checklist will be replaced by an improved, up to date version.
+
+.. paragraph above is temporary. Main topic below commented out per M. Rudnick as the course checklist is sending people to info that is not just out of date, it's bad. - Alison 30 Oct 15
+
 
 .. Tasks in the Course Checklist are organized into the following categories.
 
@@ -140,7 +145,7 @@ appears.
 .. _Add Course Team Members:
 
 **************************
-Addng Course Team Members
+Adding Course Team Members
 **************************
 
 Course team members are users who help you build your course. Before you can
@@ -167,8 +172,8 @@ Add a Course Team Member
 
 .. important:: Course team members are not automatically enrolled in courses,
    although they can access content in Studio, the LMS, and Insights. To work
-   on a course, every course team member must register, activate a user
-   account, and enroll in the course.
+   on a course, every course team member must create and activate a user
+   account, and then enroll in the course.
 
 To add a course team member, follow these steps.
 

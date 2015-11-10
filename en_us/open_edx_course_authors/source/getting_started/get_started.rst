@@ -8,28 +8,37 @@ Getting Started with Studio
 Overview
 ***************
 
-This chapter describes the tools you use to build an edX course, and how to create your first course:
+This chapter describes the tools that you use to build an Open edX course, and
+how to create your first course.
 
-* :ref:`What is Studio?`
-* :ref:`Create Your First Course`
+.. contents::
+ :local:
+ :depth: 1
 
-.. _What is Studio?:        
-            
+If you are creating a course to run on `edx.org`_ or `edX Edge`_, see
+:ref:`coursestaff:Getting Started with Studio` in the *Building and Running
+an edX Course* guide.
+
+.. _What is Studio?:
+
 ***************
 What is Studio?
 ***************
 
-Studio is the edX tool you use to build your courses. 
+Studio is the edX tool you use to build your courses.
 
-You use Studio to create course content, problems, videos, and other resources for students.
+You use Studio to create course content, problems, videos, and other resources
+for students.
 
-With Studio, you can also manage your schedule and course team, set grading policies, publish your course, and more.
+With Studio, you can also manage the course schedule, identify members of the
+course team, set the grading policy, publish your course, and more.
 
-You use Studio directly through your browser. You do not need any additional software.
+You use Studio directly through your browser. You do not need any additional
+software.
 
-  
-.. _Create Your First Course:  
-  
+
+.. _Create Your First Course:
+
 ***************************
 Create Your First Course
 ***************************
@@ -49,14 +58,14 @@ You see the following page, which is your **My Courses** dashboard:
    :width: 600
    :alt: Image of the Create New Course page
 
-  .. note::  
+  .. note::
     Enter new course information carefully. This information becomes part of
     the URL for your course. Because this information becomes part of your
     course URL, the total number of characters in the following three fields
     must be 65 or fewer.
 
   * For **Course Name**, enter the title of your course. For example, the name
-    may be “Sets, Maps and Symmetry Groups". Use title capitalization for the
+    may be "Sets, Maps and Symmetry Groups". Use title capitalization for the
     course title.
 
   * For **Organization**, enter the name of your institution. Do not include
@@ -67,12 +76,14 @@ You see the following page, which is your **My Courses** dashboard:
     course 101x, enter **Math101x**. Do not include whitespace or special
     characters in the course number.
 
-3. Click **Save.**
+#. Click **Save.**
 
-Your new course opens to the **Course Outline** page. Because you haven't
-created any content yet, this page is empty.
+Your new course opens to the **Course Outline** page. Because no content has
+been created, this page is empty.
 
-In your browser’s address bar, notice that the URL of your course includes the
+In your browser's address bar, notice that the URL of your course includes the
 course organization, number, and course run.
 
 The rest of this documentation describes how you now build and run your course.
+
+.. include:: ../../../links/links.rst
