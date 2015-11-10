@@ -172,7 +172,7 @@
 .. _App Store: https://itunes.apple.com/us/app/edx/id945480667?mt=8
 .. _VoiceOver for OS X: https://www.apple.com/accessibility/osx/voiceover/
 .. _Creative Commons website: http://creativecommons.org/licenses
-
+.. _Google Fonts: https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans
 .. _Time and Date Time Zone Converter: http://www.timeanddate.com/worldclock/converter.html
 
 .. _Time Zone Converter: http://www.timezoneconverter.com/cgi-bin/tzc.tzc

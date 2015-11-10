@@ -8,7 +8,7 @@ Because the user interface can change rapidly and frequently, and because it is
 very expensive for translation teams to localize screen shots, the
 documentation team uses screen shot images sparingly.
 
-.. contents:: Section Contents 
+.. contents:: Section Contents
    :local:
    :depth: 1
 
@@ -66,7 +66,7 @@ Keep images flush with text in bulleted and ordered lists.
 Capturing Screen Shots
 ************************
 
-You can use any tool you like to capture images. 
+You can use any tool you like to capture images.
 
 With SnagIt, you can configure preferences to include a timing delay and
 specific on-screen objects, including the cursor, as well as setting keyboard
@@ -94,7 +94,7 @@ SnagIt Style Gallery
 =========================
 
 SnagIt 3.3.5 has a Style Gallery feature that saves the customizations that you
-make to borders, arrows, etc. for easy reuse. 
+make to borders, arrows, etc. for easy reuse.
 
 If you use SnagIt, note that the following .snagstyles files are included in
 the Images directory of this guide.
@@ -167,6 +167,19 @@ are ready to add the text, create a layer in the image specifically for the
 text, and only text. Be sure to leave 30% extra surrounding space for
 expansion.
 
+Text in annotations uses the Open Sans font. To install the Open Sans font,
+follow these steps.
+
+#. Visit the `Google Fonts`_ page for Open Sans.
+#. Under **Choose the styles you want**, select **Normal 400**.
+#. (optional) Under **Choose the character sets you want**, select any
+   character sets.
+#. On the right side of the page, click the Download icon. Choose the .zip file
+   option in the dialog box that opens.
+#. Copy all of the unzipped .ttf files and move them to the Macintosh
+   HD/Library/Fonts directory.
+#. Close and reopen any application that you want to use the font in.
+
 **************************
 Adding Images to Files
 **************************
@@ -210,15 +223,15 @@ The following examples are of alt text that is less useful.
 
  :alt: Example response.
 
-When you write alt text, follow these guidelines. 
+When you write alt text, follow these guidelines.
 
 * Quality and meaning are more important than brevity. However, length is a
   consideration, and some automated tests produce warnings for text that is
   longer than about 20 characters.
 * Punctuate the alt text.
-* To ensure that every image in an HTML file has alt text, try the 
+* To ensure that every image in an HTML file has alt text, try the
   `Durham University Alt Text Checker`_.
-* To find other accessibility issues in an HTML file, try the 
+* To find other accessibility issues in an HTML file, try the
   `Web Accessibility Evaluation Tool`_.
 
 .. _Image Sizes:
@@ -230,14 +243,14 @@ Image Sizes
 Save the screen shot as the original size. Set size in document. This way a
 user can click the image in the document to enlarge it.
 
-.. note that this only seems to control size in HTML output, not in PDFs. 
+.. note that this only seems to control size in HTML output, not in PDFs.
 .. - Alison 25 Sept 2015
 
 .. code-block:: xml
 
   .. image:: Images/descriptive_image_name.png
        :width: 600
-       :alt: 
+       :alt:
 
 
 .. list-table::

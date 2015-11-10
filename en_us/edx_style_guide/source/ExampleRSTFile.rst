@@ -353,10 +353,40 @@ is your preferred link text.
 Cross references to external web pages
 ============================================
 
-This example also includes specific link text before the URL.
-::
+To reference an external web page, you add information to the file where you
+want the link, and then add an entry for the link to the links.rst file.
 
-  `Create a Problem <http://site.Create_Problem.html>`_
+#. In the paragraph where you want the link, create an anchor that represents
+   the text that you want to use for the link.
+
+   ::
+
+      The edX engineering wiki `Release Pages`_ provide access to detailed
+      information about every change made to the edx-platform GitHub
+      repository. If you are interested in additional information about every
+      change in a release, create a user account for the wiki and review the
+      dated release pages.
+
+#. If the file does not already have one, add an ``include`` directive that
+   links to the ``edx-documentation/en_us/links/links.rst`` file. These links
+   are typically at the end of the file.
+
+   ::
+
+      .. include:: ../../links/links.rst
+
+   .. note::
+
+      The path to the links.rst file depends on the location of the file where
+      you are creating the link. For example, the path might be
+      ``../../../links/links.rst`` or ``../links/links.rst``.
+
+#. In the ``edx-documentation/en_us/links/links.rst`` file, add an entry for
+   the anchor and link.
+
+    ::
+
+      .. _Release Pages: https://openedx.atlassian.net/wiki/display/ENG/Release+Pages
 
 ============================================
 Cross references to edX101 demo course pages
@@ -650,3 +680,4 @@ being displayed in different colors.
               </solution>
             </problem>
 
+.. include:: ../../links/links.rst
