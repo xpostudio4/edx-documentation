@@ -19,9 +19,9 @@ Resources
 These resources for screen captures (existing dummy courses with good
 data) are available on edX Edge.
 
-* `AA Introduction to Music Theory <https://studio.edge.edx.org/course/sylviaX/TEST10/2014_T3>`_
+* `AA Introduction to Music Theory`_
 
-* `La Tierra Centroamericana <https://studio.edge.edx.org/course/edX/GEO101/2014_T1>`_
+* `La Tierra Centroamericana`_
 
 *****************
 Guidelines
