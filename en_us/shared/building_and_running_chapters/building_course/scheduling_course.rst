@@ -155,8 +155,10 @@ Advertise a Different Start Date
 
 You can advertise a start date for your course that is different from the
 course start date you set in the **Schedule & Details** page. You might want
-to do this if there is uncertainty about the exact start date. For example, you
-could advertise the start date as "Anytime, self-paced".
+to do this if there is uncertainty about the exact start date.
+
+You can enter a specific date or a description. For example, you could
+advertise the start date as either "10/15/2016" or "Anytime, self-paced".
 
 To set an advertised start date in Studio, follow these steps.
 
@@ -165,9 +167,10 @@ To set an advertised start date in Studio, follow these steps.
 #. Locate the **Course Advertised Start Date** field. The default value is
    ``null``.
 
-#. Enter the start date that you want learners to see for your course. Date
-   values entered in MM/DD/YYYY format will appear to learners in DD Mon YYYY
-   format.
+#. Enter the start date that you want learners to see for your course.
+
+   A date value entered in MM/DD/YYYY format appears to learners in DD Mon YYYY
+   format. For example, 10/15/2016 appears as 15 Oct 2016
 
 #. Add quotation marks (``" "``) before and after the start date value. An
    example follows.
@@ -200,7 +203,7 @@ and, after they enroll in the course, on their dashboard.
 
 .. only:: Open_edX
 
-  To find the URL of your course's **About** page, in Studio select
+  To find the URL of your course's **About** page in Studio, select
   **Settings** and then **Schedule & Details**.
 
 After learners enroll in your course, the course appears on their course
@@ -208,7 +211,7 @@ dashboards. To access the dashboard, learners select their usernames and then
 **Dashboard**.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/dashboard-course-start-and-end.png
- :alt: The student dashboard with a course in progress, one that has ended, one
+ :alt: The learner dashboard with a course in progress, one that has ended, one
   that is self-paced and can be started any time, and one that has not
   started.
  :width: 800

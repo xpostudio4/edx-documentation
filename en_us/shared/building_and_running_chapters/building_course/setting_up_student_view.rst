@@ -77,7 +77,7 @@ page.
 .. only:: Partners
 
   .. note:: For courses running on edX.org, you must communicate the course
-   description to your edX Partner Manager, to ensure the content is accurate
+   description to your edX Partner Manager to ensure the content is accurate
    on the course **About** page.
 
 Given the diversity of online learners, be sure to review your course
@@ -115,11 +115,11 @@ To provide a description for your course, follow these steps.
 Add a Course Image
 ************************
 
-The course image is an image file that you upload to Studio appears on the
-learner dashboard. The image file should be a minimum of 378 pixels in width by
-225 pixels in height, and in .jpg or .png format. Make sure the image that you
-upload maintains the aspect ratio of those dimensions so that the image appears
-correctly on the dashboard.
+The course image is an image file that you upload to Studio. The course image
+appears on the learner dashboard. The image file should be a minimum of 378
+pixels in width by 225 pixels in height, and must be in .jpg or .png format.
+Make sure the image that you upload maintains the aspect ratio of those
+dimensions so that the image appears correctly on the dashboard.
 
 In the following example, the course image that was added in Studio is circled
 in the dashboard.
@@ -173,7 +173,8 @@ Ensure your course introduction video follows the same :ref:`Compression
 Specifications` and :ref:`Video Formats` guidelines as course content videos.
 
 Learners access the course video from the course **About** page. In this
-example, the video **play** option appears over the course image. When learners select **play**, the video player opens and the course video plays.
+example, the video **play** option appears over the course image. When learners
+select **play**, the video player opens and the course video plays.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/  about-page-course-video.png
  :alt: Image of the course video in the course summary page.
