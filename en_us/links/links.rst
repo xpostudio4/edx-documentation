@@ -53,8 +53,6 @@
 
 .. _GitHub Flow: https://github.com/blog/1557-github-flow-in-the-browser
 
-.. _GitHub Flow: https://github.com/blog/1557-github-flow-in-the-browser
-
 .. _GitHub Help: https://help.github.com/articles/set-up-git
 
 .. _PyEnv: https://github.com/yyuu/pyenv

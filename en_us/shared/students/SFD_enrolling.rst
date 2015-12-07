@@ -4,7 +4,8 @@
 Enrolling in a Course
 ##############################
 
-This topic describes how to enroll and verify your identity in an edX course.
+This topic describes how to enroll in, and verify your identity for, an edX
+course.
 
 .. contents::
   :local:
@@ -18,8 +19,7 @@ To enroll in a course, follow these steps.
 
 #. On the edX home page, select the course that you want.
 
-#. When the About page for the course opens, select **Enroll Now** in the
-   upper right corner of the page.
+#. When the **About** page for the course opens, select **Enroll Now**.
 
   * If the course only offers honor code certificates, you are enrolled in the
     course after you select **Enroll Now**.
@@ -90,12 +90,12 @@ To verify your identity, follow these steps.
     Certificate**, submit payment information, and then select **Verify Now**
     on the payment confirmation page.
 
-  * If you enrolled in the course as an honor code learner, select **Upgrade to
-    Verified Track** next to the course on your dashboard.
+  * If you enrolled in the course as an honor code learner, on your dashboard
+    select **Upgrade to Verified Track** for the course.
 
   * If you enrolled as a verified learner and submitted payment but did not
-    verify your identity, select **Verify Now** next to the course on your
-    dashboard.
+    verify your identity, on your dashboard select **Verify Now** for the
+    course.
 
 #. On the **Take Your Photo** page, select the camera icon below your image to
    take a picture of your face.
