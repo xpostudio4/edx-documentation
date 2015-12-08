@@ -286,9 +286,9 @@ Additional repositories are used for other projects. Our contributor agreement,
 contributor guidelines and coding conventions, and other resources are
 available in these repositories.
 
-==============
-Email and IRC
-==============
+===============
+Email and Slack
+===============
 
 To receive and share information by email, developers can join these Google
 groups to ask questions and participate in discussions with peers and edX
@@ -305,7 +305,8 @@ Additional Google groups are occasionally formed for individual projects.
  Please do not report security issues in public. If you have a concern,
  please email security@edx.org.
 
-EdX engineers often monitor the Freenode #edx-code IRC channel.
+EdX also runs a `Slack`_ team for real-time conversation about Open edX.
+To join the team, `get a free invitation to Slack`_ and follow the instructions.
 
 ====================
 Wikis and Web Sites
@@ -453,6 +454,7 @@ edX Global Community meetup_ group.
 .. _edX Status: http://status.edx.org/
 .. _edx-tools: https://github.com/edx/edx-tools/wiki
 .. _frequently asked questions: http://www.edx.org/student-faq
+.. _get a free invitation to Slack: https://openedx-slack-invite.herokuapp.com/
 .. _Installing, Configuring, and Running the edX Platform: http://edx.readthedocs.org/projects/edx-installing-configuring-and-running/en/latest/
 .. _meetup: http://www.meetup.com/edX-Global-Community/
 .. _openedx-analytics: http://groups.google.com/forum/#!forum/openedx-analytics
@@ -465,6 +467,7 @@ edX Global Community meetup_ group.
 .. _openedx-studio: http://groups.google.com/forum/#!forum/openedx-studio
 .. _openedx-translation: http://groups.google.com/forum/#!forum/openedx-translation
 .. _open Confluence wiki: http://openedx.atlassian.net/wiki/
+.. _Slack: https://slack.com/
 .. _partners.edx.org: https://partners.edx.org
 .. _Twitter:  http://twitter.com/edXstatus
 .. _Using edX Insights: http://edx-insights.readthedocs.org/en/latest/
